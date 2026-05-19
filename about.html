@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style> 
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #eaf6ff, #d6efff);
+    color: #1e3a5f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* About Container */
+.about-container {
+    background: white;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 80, 140, 0.15);
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image Styling */
+.about-container img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #9ed8ff;
+    box-shadow: 0 8px 20px rgba(0, 80, 140, 0.2);
+}
+
+/* Text Section */
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #0f4c81;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .about-container img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-text h1 {
+        font-size: 1.7rem;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <div class="about-container">
+
+    <img src="melly.jpg" alt="Maurice Image">
+
+    <div class="about-text">
+        <h1>About Me</h1>
+
+        <p>I'm Maurice, a self taught developer. The language I am currently learning is HTML. I hope to master the skill of software engineering.</p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <style>
+
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #eaf6ff, #d6efff);
+            color: #1e3a5f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        /* Contact Container */
+        .contact-container {
+            background: white;
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 80, 140, 0.15);
+            text-align: center;
+        }
+
+        /* Heading */
+        .contact-container h1 {
+            font-size: 2.5rem;
+            color: #0f4c81;
+            margin-bottom: 25px;
+        }
+
+        /* Paragraphs */
+        .contact-container p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        /* Email Link */
+        .contact-container a {
+            color: #0b6cb8;
+            text-decoration: none;
+        }
+
+        .contact-container a:hover {
+            color: #063970;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Buttons */
+        .social-links a {
+            text-decoration: none;
+            background: #9ed8ff;
+            color: #063970;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #0b6cb8;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 30px 20px;
+            }
+
+            .contact-container h1 {
+                font-size: 2rem;
+            }
+
+            .contact-container p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-container h1 {
+                font-size: 1.7rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-links a {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container">
+
+        <h1>Contact Me</h1>
+
+        <p><strong>Tel:</strong> +233531878779</p>
+
+        <p><strong>Address:</strong>
+            Accra, Ghana
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://github.com/korleteymaurice-netizen" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/korletey-maurice?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:korleteymaurice@gmail.com">
+                Gmail
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
